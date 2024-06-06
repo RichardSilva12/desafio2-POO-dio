@@ -1,5 +1,10 @@
 import java.time.LocalDate;
 
+import dominio.Bootcamp;
+import dominio.Curso;
+import dominio.Dev;
+import dominio.Mentoria;
+
 public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
@@ -28,16 +33,16 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        devCamila.progredir();
-        devCamila.progredir();
+        Dev devRichard = new Dev();
+        devRichard.setNome("Camila");
+        devRichard.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Richard:" + devRichard.getConteudosInscritos());
+        devRichard.progredir();
+        devRichard.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Richard:" + devRichard.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Richard:" + devRichard.getConteudosConcluidos());
+        System.out.println("XP:" + devRichard.calcularTotalXp());
 
         System.out.println("-------");
 
